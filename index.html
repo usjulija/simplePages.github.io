@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Artist's gallery">
+  <meta name="keywords" content="Paintings, colors, art, hobby">
+  <meta name="author" content="Julia Us">
+  <!-- CSS -->
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link rel="icon" href=".\images\small-logo.png" type="image/png" sizes="16x16">
+  <title>Simple Colors</title>
+</head>
+<body>
+<!-- Navigation-bar-section -->
+  <div class="topnav" id="myTopnav">
+    <a href="#home" id="home-logo"><img src="https://image.ibb.co/hj1Hgw/logo.png" alt="Simple Colors logo"></a>
+    <a href="#about-me">About me</a>
+    <a href="#why-colors">Why colors?</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" style="font-size:28px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+<!-- go to top button -->
+<a onclick="topFunction()" id="myBtn" title="Go to top">Top</a>
+
+<!-- Home-picture section -->
+  <div id="home" class="home-container col-m-12">
+    <h1 class="abril home-item-heading slideRight">My simple colors</h1>
+    <a href="#portfolio" class="home-item-button slideRight">see my works</a>
+  </div>
+
+<!-- About me section -->
+  <div id="about-me"></div>
+  <div class="about-container">
+    <div class="about-item photo"></div>
+    <div class="about-item story">
+      <h1 class="margin itallic">Who I am</h1>
+      <p>Hi! My name is Julia, I live in a small town by the Baltic Sea, named Klaipeda.</p>
+      <p>Art is my passion and from time to time I grab canvas and
+        acrylic paint and create something colorful.</p>
+      <p>Enjoy the gallery!</p>
+    </div>
+  </div>
+<!-- Why colors section with courusel -->
+  <h2 id="why-colors" class="margin center abril">Why colors?</h2>
+  <p class="margin center">Why to enjoy painting? It helps to clear one's mind and calm the soul.<br>
+    Here are some inspirational quotes about art and painting.
+  </p>
+
+  <!-- courusel container -->
+  <div class="slideshow-container col-m-12">
+    <div class="mySlides fade quote-one">
+      <div class="text">
+        <p>The purpose of <span class="itallic">art</span> is</p>
+        <p class="itallic">washing the dust</p>
+        <p>of daily life off our <span class="itallic">souls.</span></p>
+        <footer>Pablo Picasso</footer>
+      </div>
+    </div>
+
+    <div class="mySlides fade quote-two">
+      <div class="text">
+        <p>God is really only <span class="itallic">another artist.</span></p>
+        <p>He invented the giraffe, the elephant and the cat.</p>
+        <p>He has no real <span class="itallic">style</span>, He just goes on <span class="itallic">trying</span> other things.</p>
+        <footer>Pablo Picasso</footer>
+      </div>
+    </div>
+
+    <div class="mySlides fade quote-three">
+      <div class="text">
+        <p>All children are <span class="itallic">artists.</span></p>
+        <p>The problem is</p>
+        <p class="itallic"> how to remain an artist</p>
+        <p>once he <span class="itallic">grows</span> up.</p>
+          <footer>Pablo Picasso</footer>
+      </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+<!-- Portfolio-gallery section -->
+  <!-- Header -->
+  <div id="portfolio">
+    <h1 class="center abril margin">My last works</h1>
+    <!-- Photo Grid -->
+    <div class="portfolio-row">
+      <div class="portfolio-column">
+        <div class="hovereffect">
+          <img src=".\images\small\bird.jpg" alt="bird" onclick="openModal();currentSlidePortfolio(1)" class="col-m-12">
+          <div class="overlay" onclick="openModal();currentSlidePortfolio(1)">
+          <p class="itallic">Eagle</p>
+          </div>
+        </div>
+        <br>
+        <div class="hovereffect">
+          <img src=".\images\small\sea.jpg" alt="sea" onclick="openModal();currentSlidePortfolio(2)" class="col-m-12">
+            <div class="overlay" onclick="openModal();currentSlidePortfolio(2)">
+              <p class="itallic">Whale in the sky</p>
+            </div>
+        </div>
+        <br>
+      </div>
+      <div class="portfolio-column">
+        <div class="hovereffect">
+          <img src=".\images\small\night.jpg" alt="night" onclick="openModal();currentSlidePortfolio(3)" class="col-m-12">
+            <div class="overlay" onclick="openModal();currentSlidePortfolio(3)">
+              <p class="itallic">Lady-Night</p>
+            </div>
+        </div>
+        <br>
+        <div class="hovereffect">
+          <img src=".\images\small\flowers.jpg" alt="flowers" onclick="openModal();currentSlidePortfolio(4)" class="col-m-12">
+            <div class="overlay" onclick="openModal();currentSlidePortfolio(4)">
+              <p class="itallic">Peonies</p>
+            </div>
+        </div>
+        <br>
+        <div class="hovereffect">
+          <img src=".\images\small\feather.jpg" alt="feather" onclick="openModal();currentSlidePortfolio(5)" class="col-m-12">
+            <div class="overlay" onclick="openModal();currentSlidePortfolio(5)">
+              <p class="itallic">Indian Feathers</p>
+            </div>
+        </div>
+        <br>
+      </div>
+      <div class="portfolio-column">
+        <div class="hovereffect">
+          <img src=".\images\small\bird-2.jpg" alt="bird" onclick="openModal();currentSlidePortfolio(6)" class="col-m-12">
+            <div class="overlay" onclick="openModal();currentSlidePortfolio(6)">
+              <p class="itallic">Following the Sun</p>
+            </div>
+        </div>
+        <br>
+        <div class="hovereffect">
+          <img src=".\images\small\wood.jpg" alt="wood" onclick="openModal();currentSlidePortfolio(7)" class="col-m-12">
+            <div class="overlay" onclick="openModal();currentSlidePortfolio(7)">
+              <p class="itallic">Magic Wood</p>
+            </div>
+        </div>
+        <br>
+      </div>
+      <div class="portfolio-column">
+        <div class="hovereffect">
+          <img src=".\images\small\bird-3.jpg" alt="bird" onclick="openModal();currentSlidePortfolio(8)" class="col-m-12">
+            <div class="overlay" onclick="openModal();currentSlidePortfolio(8)">
+              <p class="itallic">Lady-Bird</p>
+            </div>
+        </div>
+        <br>
+        <div class="hovereffect">
+          <img src=".\images\small\winter.jpg" alt="winter" onclick="openModal();currentSlidePortfolio(9)" class="col-m-12">
+            <div class="overlay" onclick="openModal();currentSlidePortfolio(9)">
+              <p class="itallic">Winter</p>
+            </div>
+        </div>
+        <br>
+        <div class="hovereffect">
+          <img src=".\images\small\cat.jpg" alt="cat" onclick="openModal();currentSlidePortfolio(10)" class="col-m-12">
+            <div class="overlay" onclick="openModal();currentSlidePortfolio(10)">
+              <p class="itallic">Abyssinian Cat</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal (opens images in the same window with nice navigation) -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlidesPortfolio fade">
+            <div class="numbertext">1 / 10</div>
+            <img src=".\images\big\bird-big.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlidesPortfolio fade">
+            <div class="numbertext">2 / 10</div>
+            <img src=".\images\big\sea-big.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlidesPortfolio fade">
+            <div class="numbertext">3 / 10</div>
+            <img src=".\images\big\night.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlidesPortfolio fade">
+            <div class="numbertext">4 / 10</div>
+            <img src=".\images\big\flowers-big.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlidesPortfolio fade">
+            <div class="numbertext">5 / 10</div>
+            <img src=".\images\big\feather-big.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlidesPortfolio fade">
+            <div class="numbertext">6 / 10</div>
+            <img src=".\images\big\bird2-big.jpg" style="width:100%">
+          </div>
+          <div class="mySlidesPortfolio fade">
+            <div class="numbertext">7 / 10</div>
+            <img src=".\images\big\wood.jpg" style="width:100%">
+          </div>
+          <div class="mySlidesPortfolio fade">
+            <div class="numbertext">8 / 10</div>
+            <img src=".\images\big\bird3-big.jpg" style="width:100%">
+          </div>
+          <div class="mySlidesPortfolio fade">
+            <div class="numbertext">9 / 10</div>
+            <img src=".\images\big\winter-big.jpg" style="width:100%">
+          </div>
+          <div class="mySlidesPortfolio fade">
+            <div class="numbertext">10 / 10</div>
+            <img src=".\images\big\cat-big.jpg" style="width:100%">
+          </div>
+
+          <a class="portfolio-prev" onclick="plusSlidesPortfolio(-1)">&#10094;</a>
+          <a class="portfolio-next" onclick="plusSlidesPortfolio(1)">&#10095;</a>
+
+          <div class="caption-container itallic">
+            <p id="caption"></p>
+          </div>
+
+
+          <div class="column">
+            <img class="demo cursor" src=".\images\tiny\bird-t.jpg" style="width:100%" onclick="currentSlidePortfolio(1)" alt="Eagle">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src=".\images\tiny\sea-t.jpg" style="width:100%" onclick="currentSlidePortfolio(2)" alt="Whale in the sky">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src=".\images\tiny\night-t.jpg" style="width:100%" onclick="currentSlidePortfolio(3)" alt="Lady-Night">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src=".\images\tiny\flowers-t.jpg" style="width:100%" onclick="currentSlidePortfolio(4)" alt="Peonies">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src=".\images\tiny\feather-t.jpg" style="width:100%" onclick="currentSlidePortfolio(5)" alt="Indian Feathers">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src=".\images\tiny\bird-2-t.jpg" style="width:100%" onclick="currentSlidePortfolio(6)" alt="Following the Sun">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src=".\images\tiny\wood-t.jpg" style="width:100%" onclick="currentSlidePortfolio(7)" alt="Magic Wood">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src=".\images\tiny\bird-3-t.jpg" style="width:100%" onclick="currentSlidePortfolio(8)" alt="Lady-Bird">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src=".\images\tiny\winter-t.jpg" style="width:100%" onclick="currentSlidePortfolio(9)" alt="Winter">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src=".\images\tiny\cat-t.jpg" style="width:100%" onclick="currentSlidePortfolio(10)" alt="Abyssinian Cat">
+          </div>
+        </div>
+      </div>
+  </div>
+<!-- Section services -->
+  <h2 id="services" class="abril center margin">Services</h2>
+  <p class="margin center">I may paint something beautifull for you</p>
+  <div class="services-container">
+    <div class="services-item">
+      <p class="itallic">Portraits</p>
+      <img src="https://image.ibb.co/dAJnKR/003_picture.png" alt="picture">
+    </div>
+    <div class="services-item">
+      <p class="itallic">Landscapes</p>
+      <img src="https://image.ibb.co/mkmJR6/002_desert.png" alt="desert">
+    </div>
+    <div class="services-item">
+      <p class="itallic">Fantasy</p>
+      <img src="https://image.ibb.co/nHaZzR/001_unicorn.png" alt="unicorn">
+    </div>
+  </div>
+<!-- Section contacts -->
+<div class="contact-section">
+  <h2 id="contact" class="abril center">Quick Contact</h2>
+  <div class="contact-container col-m-12">
+    <div class="contact-item form">
+      <form method="post" action="contact.php">
+        <label class="abril">*Name</label>
+        <input name="name" placeholder="Type Here">
+
+        <label class="abril">*Email</label>
+        <input name="email" type="email" placeholder="Type Here">
+
+        <label class="abril">Message</label>
+        <textarea name="message" placeholder="Type Here"></textarea>
+        <label class="abril">*What is 5+3? (Anti-spam)</label>
+        <input name="human" placeholder="Type Here">
+        <br>
+        <input id="submit" name="submit" type="submit" value="Send Me">
+      </form>
+    </div>
+    <div class="contact-item social">
+      <p class="center padding">If you like my art and want to <span class="itallic">contact me,</span><br> please <span class="itallic">fill in</span> the present form <br> or just contact me <span class="itallic">around the Web</span></p>
+      <div class="margin social-logos">
+        <a href="https://www.pinterest.com/julijaus/art-paintings/" target="_blank"><img src="https://image.ibb.co/gZwS3m/p_logo.png" alt="p_logo" style="width:12%"></a>
+        <a href="https://www.facebook.com/julija.us.5" target="_blank"><img src="https://image.ibb.co/gYA9G6/f_logo.png" alt="f_logo" style="width:12%"></a>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Footer -->
+<div class="footer">
+  <p>&copy; 2018, designed by</p><img src="https://image.ibb.co/doXZTb/6.png" alt="logo">
+</div>
+<!-- JavaScript and jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
